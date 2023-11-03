@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce site with analytics</title>
+    <!--Step 1 OSS (link to CSS)-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Download from Box Icons-->
+    <link 
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+        rel="stylesheet"/>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9WPKH683QW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9WPKH683QW');
+</script>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--add Nav ctnr-->
+        <div class="nav container">
+            <!--add logo-->
+            <a href="#" class="logo">Ecommerce</a>
+            <!--add cart icon-->
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+            <!--cart-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content">
+                    
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0$</div>
+                </div>
+                <!--Buy Button-->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!--Close button-->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!--Products-->
+    <section class="shop container">
+        <h2 class="section-title">Shop Product</h2>
+        <!--Shop content-->
+        <div class="shop-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <!--stripe needs images that are online or on local server, thats why we have to upload it on sites like blogger to get the image address.-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQbLwDzAnTfOpbGkBenAdbYIzpRkesLKcueLVY5VrX0BhozFQgo996t1J2IDn5u2LyVmRNrHZXFDXql5gdXaP0i408r0DnwPhNgv0nCWu13yq_g9_tgNDQE5NI0jKVMpFWjghZU4m8uH7BI92uBwLZ7fugZPh5gL2vUDTEGktVuc1Gf67fBzo9SNc8qDLE/s320/product1.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Adicolor Seasonal</h2>
+                <span class="price">$50</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>            
+            <!--Box 2-->
+            <div class="product-box">
+                <!--stripe needs images that are online or on local server, thats why we have to upload it on sites like blogger to get the image address.-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmNGIfdyldGmigo1WHWlkRP3THuECFBXPiM3s4sffWWadY_LtKpTNSKvr8uSDUfOSxi_L-Z5WqNsDXKTGJIM8HrDHqWPDp9aTfZ0JXKqdfgYvelsneL3g3yf_WjJi4DzyN5E3Dzf0FrNnarq2lxjNbtqt_YFvuFs7V0JjHZG2eWU-_m5dgPNlzzyd68YzK/s320/product2.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Travel Bag</h2>
+                <span class="price">$70.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!--Box 3-->
+            <div class="product-box">
+                <!--stripe needs images that are online or on local server, thats why we have to upload it on sites like blogger to get the image address.-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEjhed_haCN-850zMFBrtSqE83LhtTnvAs7yyBADprc3ZrzbiAAmKx9Ml5Gy5JQjk0hKTXcyIgiQYg0ohyzvlreTH0ytqxD5p7O5OdAW5XYx0gqYDB0bSubc-lB-uhNLXW9GdsKAQpUJUA1tdFU61Tf7FPnoQx53idpAm8vnzRA90kl_PpLilEmLZ6ZguU/s320/product3.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Ultimate Hat</h2>
+                <span class="price">$24.98</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!--Box 4-->
+            <div class="product-box">
+                <!--stripe needs images that are online or on local server, thats why we have to upload it on sites like blogger to get the image address.-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw2Il-rkhl-P2e2kBUvgJzMMkm5vhtAtGre_p4pKWonKUnhKMdUEYfCObG15hoIom_cJW0L3NAURa4nEeoGXYBhh9_6drtQiFceqYnrz5LAne4t-zrS05aZgjZ0EfYqOs0vK4iSPe2GSkHLQwTjMqgpS6vkTnMqbqOt6LpcS7TzzMLTBRBwo21Uc1IL8-x/s320/product4.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Messi Goat Tee</h2>
+                <span class="price">$100</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!--Box 5-->
+            <div class="product-box">
+                <!--stripe needs images that are online or on local server, thats why we have to upload it on sites like blogger to get the image address.-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQgm-l9hd4LVHnp_o_C-earrr4rzICryYsb10ioLJDjgkQ0JUUGv_h1sA7bNbuwOWpaaXjMfpqmmkPg0An-X258G13avCw7Q_6wkOhE_UKQZoyqYUNNCBxdXfda-gCQe7DKmrPdXqyuOfx90lGwMOr9PjDCoa7fgOgR8UZPfxWhfxjvpoLhVtqd4cKbNbq/s320/product5.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Adicolor Hoodie</h2>
+                <span class="price">$74.50</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!--Box 6-->
+            <div class="product-box">
+                <!--stripe needs images that are online or on local server, thats why we have to upload it on sites like blogger to get the image address.-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAiBOj7p9wE-QK370AZkgQwdgux41wGnyx04xNenIlxh7EnNjxnYL7JT978j7Y_VYJsuXS3ySNlA5B65QNFOlZsHPO9o989N4KBqimIHxrzLWpuH2AwNVt6CrT3DEajqgsG03iVenlgx9YgZ_VF-pITSo-hekCHyrS975DOzQwBB-H08TReqw3QUJbc89r/s320/product6.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Adidas Earbuds</h2>
+                <span class="price">$200</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!--Box 7-->
+            <div class="product-box">
+                <!--stripe needs images that are online or on local server, thats why we have to upload it on sites like blogger to get the image address.-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOTvB0HGr1ELmBUx1xCi7LG2bm3rUVSitnmjrwfEYJntuY6gBbf0jh7VaZBizOmS3wH63M87Jwcr6OcpqzBIL52avh_wqlDnhko_Q07oQx2J90et-rPSOjyzSDbSniwaXBNRoK6C_d0JChzc3dltvkgIZJdozRVioOT9B3WL6TyRylnXPIuN1f9AUncn5j/s320/product7.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Metal Bottle</h2>
+                <span class="price">$80.04</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!--Box 8-->
+            <div class="product-box">
+                <!--stripe needs images that are online or on local server, thats why we have to upload it on sites like blogger to get the image address.-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguUQh9SEIUvdKETWxTRwR4ivhItRrIjHDBPK7IYJOMdxe6FlIR62NuoBzJxtYK1s1dDAlaUZRb4EV65Jjz_off-R5Kdjzwkr_1jjCMPfcEWO1EX_hCMel_psgbbGdd7rkR1fM3hrPL40p2u3Ks438GZwSq2mJYsbpzp0L45FdWLyRlzxBCaLaDF7H7aWnJ/s320/product8.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Ultraboost Shoes</h2>
+                <span class="price">$280</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>  
+
+        </div>
+    </section>
+    <!-- link to js-->
+    <script src="main.js"></script>
+</body>
+</html>
